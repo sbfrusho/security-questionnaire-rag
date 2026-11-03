@@ -1,0 +1,53 @@
+# Secrets: never commit API keys, passwords, or private keys
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials*.json
+
+# Private documents: company policies and questionnaires can be confidential
+data/private/
+uploads/
+
+# Database dumps can contain real data
+*.dump
+*.sql.gz
+*.sqlite
+*.sqlite3
+*.db
+
+# Python: rebuilt from requirements.txt
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Frontend: rebuilt by npm
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+
+# Logs can contain questions, answers, or other private data
+logs/
+*.log
+
+# Downloaded models
+models/
+.cache/
+
+# Editors and operating system
+.idea/
+.vscode/
+.DS_Store
